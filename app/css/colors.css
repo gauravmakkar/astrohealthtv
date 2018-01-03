@@ -26,19 +26,19 @@
 [data-color="red"] .ui-datepicker-title,
 [data-color="red"] .icon-sub-menu .up-icon,
 [data-color="red"].demo-color {
-	background-color: #d4000e;
+	background-color: #048434;
 }
 
 [data-color="red"] .title-style02,
 [data-color="red"] .title-style02-light,
 [data-color="red"] .blockquote_style02 {
-	border-left: 3px solid #d4000e;
+	border-left: 3px solid #048434;
 }
 [data-color="red"] .currentLink,
 [data-color="red"] .title-style01>h3,
 [data-color="red"] .style-02 span,
 [data-color="red"] .nav-tabs.nav-tabs-bottom > li.active > a {
-	border-bottom: 2px solid #d4000e;
+	border-bottom: 2px solid #048434;
 }
 [data-color="red"] .contact-us a,
 [data-color="red"] .content-wrap a,
@@ -60,13 +60,13 @@
 [data-color="red"] .square10,
 [data-color="red"] .square11,
 [data-color="red"] #cdate {
-	color: #d4000e;
+	color: #048434;
 }
 [data-color="red"] .pagination > .active > a {
-	border: 1px solid #d4000e;
+	border: 1px solid #048434;
 }
 [data-color="red"] .navbar-nav > li.active > a {
-	background-color: #be000c;
+	background-color: #222;
 }
 [data-color="red"] .sponsored:hover,
 [data-color="red"] #sidebar-newsletter button:hover,
@@ -86,7 +86,7 @@
 [data-color="red"] .block-title-1,
 [data-color="red"] .block-title-2 {
 	color: #fff;
-	background-color: #e4000d;
+	background-color: #222;
 }
 
 /*2.BLUE*/
@@ -829,7 +829,7 @@
 [data-color="slate"] .pagination > .active > a,
 [data-color="slate"] .read-more:hover:before,
 [data-color="slate"] .play-icon {
-	background-color: #d4000e;
+	background-color: #048434;
 }
 [data-color="slate"] .title-style02,
 [data-color="slate"] .title-style02-light,
@@ -864,10 +864,10 @@
 [data-color="slate"] .square11,
 [data-color="slate"] .read-more:hover,
 [data-color="slate"] #cdate {
-	color: #d4000e;
+	color: #048434;
 }
 [data-color="slate"] .pagination > .active > a {
-	border: 1px solid #d4000e;
+	border: 1px solid #048434;
 }
 [data-color="slate"] .navbar-nav > li.active > a {
 	background-color: #75777c;

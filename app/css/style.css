@@ -1367,7 +1367,7 @@ blockquote img {
 }
 .btn-success:focus, .btn-success.disabled:focus {
 	color: #fff;
-	background-color: #d4000e;
+	background-color: #048434;
 	border: none;
 }
 /* 1.19 Page Loading
@@ -1867,7 +1867,7 @@ header {
 .sidenav-brand h2 {
 	display: inline;
 	vertical-align: bottom;
-	color: #d4000e;
+	color: #048434;
 	font-weight: 400;
 }
 .sidenav-brand h2 span {
@@ -2852,8 +2852,8 @@ header {
 	padding: .675em 1.1em;
 }
 .bg-red {
-	background-color: #d4000e;
-	border-color: #d4000e;
+	background-color: #048434;
+	border-color: #048434;
 	color: #fff;
 }
 .bg-gray {
@@ -2862,7 +2862,7 @@ header {
 }
 .bg-underline {
 	background: transparent;
-	border-bottom: 2px solid #d4000e;
+	border-bottom: 2px solid #048434;
 }
 .table-footer {
 	padding: 6px 14px 7px;
@@ -3193,8 +3193,8 @@ button.up:hover, button.down:hover {
 }
 .open > .dropdown-toggle.btn-primary, .open > .dropdown-toggle.btn-primary:hover {
 	color: #fff;
-	background-color: #d4000e;
-	border-color: #d4000e;
+	background-color: #048434;
+	border-color: #048434;
 }
 .no-spinners {
 	-moz-appearance: textfield;
@@ -4333,7 +4333,7 @@ span.side-2 {
 	color: #222;
 	text-transform: uppercase;
 	display: inline-block;
-	border-bottom: 2px solid #d4000e;
+	border-bottom: 2px solid #048434;
 	padding-bottom: 4px;
 	margin-bottom: -2px;
 }
@@ -4391,7 +4391,7 @@ span.side-2 {
 }
 .comment-title h4 {
 	display: inline-block;
-	border-bottom: 2px solid #d4000e;
+	border-bottom: 2px solid #048434;
 	padding-bottom: 0;
 	margin-bottom: -2px;
 }
@@ -4476,7 +4476,7 @@ span.side-2 {
 	border: 1px solid #49494d;
 }
 .has-error .help-block {
-	color: #d4000e;
+	color: #048434;
 }
 .form-reply-section .btn {
 	display: inline-block;
@@ -4573,7 +4573,7 @@ textarea {
 	padding: 0;
 	list-style-type: none;
 	line-height: normal;
-	color: #d4000e;
+	color: #048434;
 }
 .pager {
 	margin: 10px 0 16px;
@@ -5834,7 +5834,7 @@ margin-right:-5px;
 }
 
 .tR--news .sidebar-newsfeed .item-content h4 a:hover {
-	color:#d4000e !important;
+	color:#048434 !important;
 }
 
 .tR--news .sidebar-newsfeed .item-content p {

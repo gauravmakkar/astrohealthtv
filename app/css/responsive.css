@@ -37,7 +37,7 @@
 	
 	/* Module */
 	.module-top .container { padding: 0 16px; }
-	.module-title .title {color: #d4000e}
+	.module-title .title {color: #048434}
 	.module-title .subtitle {}
 	.show-info { padding-left: 8px; padding-right: 10px; }
 	.show-info-button { margin-bottom: 20px; }
@@ -323,7 +323,7 @@
     ---------------------------------------------------------------------- */
 @media only screen and (max-width: 479px) {
 	.navbar-default .navbar-toggle.active {
-		margin-top:16	px;
+		margin-top:16px;
 	}
 	/* Module */
 	.module-title { margin-bottom: 14px; }
@@ -361,7 +361,7 @@
 	
 	/* Social Icons */
 	.sidebar-social-icons a { line-height: 30px; width: 30px; height: 30px; }
-	.sidebar-social-icons li: last-child { margin-right: 0; }
+	.sidebar-social-icons li:last-child { margin-right: 0; }
 	.menu-social-icons li, .sidebar-social-icons li { float: left; width: auto; margin-right: 1px; }
 	.menu-social-icons li { float: left; width: 41px; margin-right: 1px; }
 }
@@ -421,7 +421,7 @@
 
 @media only screen and (min-width: 1101px) and (max-width: 1239px) {
     .ellipsis { position: relative; }
-	.ellipsis: :before { content: '&nbsp;'; visibility: hidden; }
+	.ellipsis :before { content: '&nbsp;'; visibility: hidden; }
 	.ellipsis a { position: absolute; left: 0; right: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 
