@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vocal-tempo-190505",
+  "private_key_id": "172ffc1bf0544ffc152260bc088d500958085f09",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIO+7SIli9l/7w\nd9KFNciZgIbk5MIoO/ndX8wWaz4JqojB81nqbTfLaVDo4C2nZNstWN3SIieb1CCg\ng9amy+CXMLE5LtT+MEXZxgogJmrqm+0BBrNHkYeq1z629veaxw8ZnAoxgsX507/h\noja/VGEibpwJCvSWEG+Xy+KGPUMciHidUyg3Xg+dQKaL5ezeTR4HTRM2oEcTE7GK\nWz93UqMhADAqryMW9RJQyf5+9qKxU5gQxmTSze+Vav4fWjyQNBcZwlCL8U6ij+g4\njR3WgmFxRFA6bsmNg3JPMqBPjMR/AcSjPVhv3512enC8ReQ5Dt3YBF5QVBsDYFpZ\nBrDYBVA7AgMBAAECggEAMr2ZSe/BPB5J0OcUVoRoFpoO1O8xUl/MdDBD+ARqHqnz\n6O5BgVn28xl3kuPIPeydbBLid08HaYIqWHLAUNlGSxngNyTqfZV/Be4c/8OsgVJN\nD18CzGaREhZkgpn36eV6qpszrBM/Fw11SPjB1d9MlByidtorW+HDXZyhhTH+ETsC\n7UjEGdRAYIZyfhp6FKEj1/OjC5yYEoLqE0/69yWXv5sxiQwVGeQt1EwadcmCjZD/\n3g1bLS4NmXrvYyNCL+lPYON+JeSeceUxiZuTjcCnMXfP6VFrh95TXdMzOpbHfA+K\nvFBLxu5BsvQqSkqzBmswvQWAnAURPV7kJuZzfnQM/QKBgQD1+QvXEO3Ke7M1ezbT\nUYJlI3PKM8vhQj6A5SfKjsctn+3dDmcOQFfdRoJgEhqVNQbU089WLMfRlmcmbpDY\nLrGR/lNjRrfDDnWXqwUZM6vkDdeiWTKNjiNQbONie9k5rVypRc9Q+13VyOn2TiHg\nGat5GiNNjwF8yU2XWtE2XbNHrQKBgQDQZY+RTAuIGpCMJecfLLlTvrMYY6HJ0TAB\nKCH+xpPYohk4dmD5UNVGW+TgOYN7bgxSilIGD92UcT7KXQlH+AzQ/aN9j8oVeIAn\nLsxjOy2pL/xK1pYYyS/xO5sik7T9d+hhP/TUWBbidTPY8EWdhTjoevm+DgoAxiz5\nXStx8IUUhwKBgCz3i5eUq7QhqyBy1xIIy6rLsWZc07/piV2tBvo74ePQYf7QnDx5\nvNZiBoGjraJrYEVWN4hMhXcmZNMc0XQEDUhgU0RJ8FxDb3H7vOHflWQKt8ohPmGs\ng343edZOR+cIb3EupvjqCzyDD2qM3BqI9tUb1ypdo2r5riqmWqrytEy9AoGBAJQl\n/yAtzWzeZbAcKegxpTZxtWQ7QAL3IYdQ/onepbA13HQVQ+85lcTFAzqb6GrQ2xW6\nm4EPulgTAa5e4YA2SPYxug5DMEh/N6ujS02n/lfucw7I6j+IlvqJg0nbc6lVmu+3\nxddHIE2xQECS3wqScNhkxDJmTJosSECmCYKgmBr1AoGBAKrt8bzJV6y7vKJ4E+TI\nrrmaXHQhK71wh4dPv0NwwxHWLcJJgdTc04gMg6PUc9ffup2z/o1DXYLtahailEvY\nMADwpIqmbkyzMkZghrMaRkN3sjX/akPEuC1MZX+Xqmn3WB4GBY6UVM4PytipU1fJ\njCOO7bZMywlsw42MExxuci9T\n-----END PRIVATE KEY-----\n",
+  "client_email": "youtube@vocal-tempo-190505.iam.gserviceaccount.com",
+  "client_id": "101731880676119327802",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/youtube%40vocal-tempo-190505.iam.gserviceaccount.com"
+}
