@@ -1501,12 +1501,12 @@ header {
 .header-logo {
 	display: inline-block;
 	font-weight: 700;
-	margin-top: 28px;
+	margin-top: 13px;
 	padding: 0;
 	border: none;
 	width: 250px;
 	position: relative;
-	height:52px;
+	height:82px;
 }
 .header-logo h1 {
 	color: #818285;
