@@ -385,7 +385,7 @@
 	.sidenav-header-logo { width: 160px !important; }
 	.sidenav-brand img {}
 	.sidenav-header-logo h5 { font-size: 11px; }
-	.sidenav-header-logo img { max-height: 24px; }
+	.sidenav-header-logo img { max-height: 30px; }
 	.top-menu ul li a { padding: 0 9px; }
 	.navbar-header { padding:7px 15px; }
 	.navbar-default .navbar-toggle { margin-top:4px; }
