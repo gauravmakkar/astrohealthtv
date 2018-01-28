@@ -1,0 +1,105 @@
+<!-- module -->
+<section class="module" ng-init="fetchStories()">
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <!-- LEFT -->
+            <div class="col-sm-12 col-md-9">
+
+
+                <!---->
+                <div class="news" ng-if="category">
+
+                    <div class="module-title">
+                        <h3 class="title" data-ng-bind="category"></h3>
+
+                    </div>
+                    <!-- Begin .item -->
+                    <div ng-click="redirectToDetails(story)" class="item row" data-ng-repeat="story in stories track by $index" style="cursor: pointer">
+                       <div class="col-sm-12"><div class="col-sm-7 listDetailVideo">
+                           <div class="video-full">
+                               <div class="video-container">
+                                   <video id="lp-pom-video-13" class="js-player vidAdjust"
+                                          style="display:block;width: 100%">
+                                       <source ng-src="{{story.link}}"
+                                               type="video/mp4"/>
+                                   </video>
+                               </div>
+                           </div>
+                       </div>
+                           <div class="col-sm-5">
+                               <div class="title-left title-style04 underline04">
+                                   <h3 data-ng-bind="story.title"></h3>
+                               </div>
+                               <br>
+
+                               <div class="post-meta-elements">
+                                   <div class="post-meta-author">
+                                       <i class="fa fa-user"></i>
+                                       <span data-ng-bind="story.userCreated.username"></span>
+                                   </div>
+                                   <div class="post-meta-date">
+                                       <i class="fa fa-calendar"></i><span data-ng-bind="story.timeCreated|viewDate"></span>
+                                   </div>
+                               </div>
+                               <p style="display: block;line-height: 22px;max-height: 132px;overflow: hidden;text-overflow: ellipsis" class="ellipsis" data-ng-bind="story.description"></p>
+
+
+
+                               <div>
+                                   <a href="#"><span class="read-more">Continue reading</span></a>
+                               </div>
+                           </div></div>
+
+                    </div>
+                    <!-- End .item -->
+                </div>
+                <!---->
+
+            </div>
+            <!-- LEFT ENDS -->
+
+            <!-- RIGHT -->
+            <div class="col-xs-12 col-md-3 tR--news" ng-init="fetchVideos()">
+                <div class="title-left title-style04 underline04">
+                    <h3><a href="#"><strong>Top</strong> Stories</a></h3>
+                </div>
+                <!-- End .block-title-1 -->
+                <!--========== BEGIN .SIDEBAR-NEWSFEED ==========-->
+                <div class="sidebar-newsfeed">
+                    <!-- Begin .newsfeed -->
+                    <div class="newsfeed-3">
+                        <ul>
+                            <li data-ng-repeat="video in videos">
+                                <div class="item" style="cursor: pointer" ng-click="redirectToDetails(video)">
+                                    <div class="item-image">
+                                        <span class="img-link">
+                                        <img class="img-responsive img-full" src="https://static.nfl.com/static/content/public/static/wildcat/assets/icons/ic_playVideo.svg">
+                                        </span>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis" style="line-height: 20px;max-height: 40px;" data-ng-bind="video.title"></h4>
+
+                                        <p style="display: block" class="ellipsis" data-ng-bind="video.description"></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- End .newsfeed -->
+                </div>
+                <!--========== END .SIDEBAR-NEWSFEED ==========-->
+
+            </div>
+            <!-- RIGHT ENDS -->
+
+        </div>
+
+
+    </div>
+</section>
+<!-- module ends -->

@@ -1,0 +1,26 @@
+/* Replace with your 'close' button ID */
+#lp-pom-button-16 {
+    display:none;
+}
+
+.lp-pom-video{
+    transition:all 0.4s linear;
+}
+.smallVid {
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 999 !important;
+    ms-transform: scale(0.25, 0.25);
+    -webkit-transform: scale(0.25, 0.25);
+    transform: scale(0.25, 0.25);
+    -webkit-transform-origin-x: 0;
+    -webkit-transform-origin-y: 0;
+    transform-origin:0 0;
+    position: fixed !important;
+    display: block !important;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+}
+.vidAdjust{
+    margin-top: 1%;
+    margin-left: 1%;
+}

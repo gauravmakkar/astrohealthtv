@@ -1,0 +1,711 @@
+<!-- module -->
+<section class="module story-details" ng-init="fetchStory()">
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <!-- LEFT -->
+            <div class="col-sm-12 col-md-9">
+
+
+                <!---->
+                <div class="detailNews">
+
+                    <div class="module-title">
+                        <h3 class="title" data-ng-bind="story.title"></h3>
+                    </div>
+
+                    <!-- video -->
+                    <div class="detailVideo" style="width: 100%">
+                        <div class="video-full">
+                            <div class="video-container">
+                                <video id="lp-pom-video-13" class="js-player vidAdjust"
+                                       style="display:block;width: 100%">
+                                    <source ng-src="{{story.link}}"
+                                            type="video/mp4"/>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- video ends -->
+
+                    <div class="row">
+                        <div class="col-sm-12 clearfix" style="margin-bottom: 15px">
+                            <div class="col-sm-6 pull-left">
+                                <div style="font-size:18px" data-ng-bind="story.userCreated.username"></div>
+                                <div style="color:darkgrey" data-ng-bind="story.lastUpdated|viewDate"></div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <span class="pull-right">
+                                 <a style="padding: 5px;" href="#" ><i style="color:#3b5998" class="fa fa-facebook-official fa-2x"></i></a>
+                                <a style="padding: 5px;"  href="#" ><i style="color:#e52d27" class="fa fa-youtube fa-2x"></i></a>
+                                <a style="padding: 5px;"  href="#"><i style="color:#2e9edd" class="fa fa-twitter fa-2x"></i></a>
+                                <a style="padding: 5px;"  href="#"><i style="color:#dd4b39" class="fa fa-google-plus fa-2x"></i></a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item-content" style="font-size: 16px" data-ng-bind="story.description">
+
+
+                    </div>
+
+
+                </div>
+                <!---->
+
+                <div class="innerListNews">
+                    <br>
+
+                    <div class="module-title">
+                        <h3 class="title">Sport News</h3>
+                    </div>
+                    <div class="news-block">
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image21.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">The energy choices</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image22.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Food/Agriculture</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image23.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Healthcare</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image24.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Housing/Construction</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+
+
+                <div class="news innerListNews">
+
+                    <div class="module-title">
+                        <h3 class="title">More from Sports</h3>
+
+                    </div>
+
+                    <!-- Begin .item -->
+                    <div class="item">
+                        <div class="item-image-1">
+                            <a class="img-link" href="#">
+                                <img class="img-responsive img-full" src="images/index_800x400-image01.jpg"
+                                     alt="">
+                            </a>
+                            <span><a class="label-1" href="#">Hockey</a></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="title-left title-style04 underline04">
+                                <h3><a href="#"><strong>Migrant</strong> Crisis</a></h3>
+                            </div>
+                            <p><a href="#" class="external-link">The proposal involves
+                                resettling one Syrian refugee in Europe for each</a></p>
+
+                            <p><a href="#" class="external-link">The U.N. says the mass return
+                                of refugees to a third country would</a></p>
+
+                            <div>
+                                <a href="#"><span class="read-more">News</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .item -->
+                    <!-- Begin .item -->
+                    <div class="item">
+                        <div class="item-image-1">
+                            <a class="img-link" href="#">
+                                <img class="img-responsive img-full" src="images/index_800x400-image02.jpg"
+                                     alt="">
+                            </a>
+                            <span><a class="label-3" href="#">Cricket</a></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="title-left title-style04 underline04">
+                                <h3><a href="#"><strong>Smith's</strong> Team</a></h3>
+                            </div>
+                            <p><a href="#" class="external-link">Democratic presidential
+                                candidate Smith speaks with supporters...</a></p>
+
+                            <p><a href="#" class="external-link">On International Women's Day,
+                                we celebrate women around the world...</a></p>
+
+                            <div>
+                                <a href="#"><span class="read-more">Politics</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .item -->
+                    <!-- Begin .item -->
+                    <div class="item">
+                        <div class="item-image-1">
+                            <a class="img-link" href="#">
+                                <img class="img-responsive img-full" src="images/index_800x400-image01.jpg"
+                                     alt="">
+                            </a>
+                            <span><a class="label-1" href="#">Hockey</a></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="title-left title-style04 underline04">
+                                <h3><a href="#"><strong>Migrant</strong> Crisis</a></h3>
+                            </div>
+                            <p><a href="#" class="external-link">The proposal involves
+                                resettling one Syrian refugee in Europe for each</a></p>
+
+                            <p><a href="#" class="external-link">The U.N. says the mass return
+                                of refugees to a third country would</a></p>
+
+                            <div>
+                                <a href="#"><span class="read-more">News</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .item -->
+                    <!-- Begin .item -->
+                    <div class="item">
+                        <div class="item-image-1">
+                            <a class="img-link" href="#">
+                                <img class="img-responsive img-full" src="images/index_800x400-image02.jpg"
+                                     alt="">
+                            </a>
+                            <span><a class="label-3" href="#">Cricket</a></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="title-left title-style04 underline04">
+                                <h3><a href="#"><strong>Smith's</strong> Team</a></h3>
+                            </div>
+                            <p><a href="#" class="external-link">Democratic presidential
+                                candidate Smith speaks with supporters...</a></p>
+
+                            <p><a href="#" class="external-link">On International Women's Day,
+                                we celebrate women around the world...</a></p>
+
+                            <div>
+                                <a href="#"><span class="read-more">Politics</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .item -->
+                </div>
+
+                <!---->
+
+                <div class="innerListNews">
+                    <br>
+
+                    <div class="module-title">
+                        <h3 class="title">Sport News</h3>
+                    </div>
+                    <div class="news-block">
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image21.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">The energy choices</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image22.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Food/Agriculture</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image23.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Healthcare</a></p>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image24.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <span class="day">Thu, Dec 12, 2016</span>
+
+                                <p><a href="#" class="external-link">Housing/Construction</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="news">
+
+                    <div class="module-title">
+                        <h3 class="title">Sport News</h3>
+
+                    </div>
+                    <!-- Begin .item -->
+                    <div class="item">
+                        <div class="item-image-1">
+                            <a class="img-link" href="#">
+                                <img class="img-responsive img-full" src="images/index_800x400-image18.jpg"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item-content">
+                            <div class="title-left title-style04 underline04">
+                                <h3><a href="#"><strong>Features</strong> & Analysis</a></h3>
+                            </div>
+                            <br>
+
+                            <div class="post-meta-elements">
+                                <div class="post-meta-author">
+                                    <i class="fa fa-user"></i>
+                                    <a href="#">By Hugh Jackson</a>
+                                </div>
+                                <div class="post-meta-date">
+                                    <i class="fa fa-calendar"></i>December 25, 2016
+                                </div>
+                            </div>
+                            <p><a href="#" class="external-link">From within the sport, the obligatory defence
+                                mechanism.</a></p>
+
+                            <p><a href="#" class="external-link">From outside the tennis, the inevitable
+                                questions. But the broader question is this: where's the line?</a></p>
+
+                            <p><a href="#" class="external-link">The player will face scrutiny use but you also
+                                ...</a></p>
+
+                            <div>
+                                <a href="#"><span class="read-more">Continue reading</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .item -->
+                    <div class="news-block">
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image25.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 1h ago</span>
+                                <a href="#">Cricket</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image26.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 54min ago</span>
+                                <a href="#"> Football</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image27.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 6h ago</span>
+                                <a href="#"> Rugby</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image28.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 1h ago</span>
+                                <a href="#">Cycling</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image29.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 1h ago</span>
+                                <a href="#">Soccer</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image30.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day">54min ago</span>
+                                <a href="#">Soccer</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image31.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 6h ago</span>
+                                <a href="#">Soccer</a>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-image">
+                                <a class="img-link" href="#">
+                                    <img class="img-responsive img-full" src="images/index_800x400-image10.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <i class="fa fa-clock-o"></i>
+                                <span class="day"> 1h ago</span>
+                                <a href="#">Soccer</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!---->
+
+
+                <!-- -->
+
+
+            </div>
+            <!-- LEFT ENDS -->
+
+            <!-- RIGHT -->
+            <div class="col-xs-12 col-md-3 tR--news">
+                <!-- latest news -->
+                <div class="title-left title-style04 underline04">
+                    <h3><a href="#">Latest News</a></h3>
+                </div>
+                <div class="sidebar-newsfeed">
+                    <!-- Begin .newsfeed -->
+                    <div class="newsfeed-3">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">From propaganda to pop artist</a></h4>
+
+                                        <p class="ellipsis">A gift for drawing led to a prestigious career as
+                                            artist...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">One Type of Food You Never Eat</a></h4>
+
+                                        <p class="ellipsis">No one has ever felt better after eating plane
+                                            food.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">Preschool</a></h4>
+
+                                        <p class="ellipsis">Your child should feel confident in her ability to
+                                            meet the challenges...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">Antarctica Stations</a></h4>
+
+                                        <p class="ellipsis">New research factors in collapsing Antarctic ice
+                                            sheet that could...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image05.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">Yellow fever outbreak</a></h4>
+
+                                        <p class="ellipsis">Drug manufacturers globally produce just enough
+                                            vaccines for...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image06.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4 class="ellipsis"><a href="#">How To Succeed In</a></h4>
+
+                                        <p class="ellipsis">How to achieve business success in a certain sector
+                                            or country.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End .newsfeed -->
+                </div>
+
+                <!--latest news ends -->
+
+                <!-- videos -->
+
+                <div class="mt15 mb15">
+
+                    <div class="title-left title-style04 underline04">
+                        <h3><a href="#">Related Videos</a></h3>
+                    </div>
+
+                    <div class="module-media">
+                        <div class="image">
+                            <img class="img-responsive" src="images/index_620x465-image04.jpg" alt="">
+                        </div>
+                        <a href="#"><span class="play-icon"></span></a>
+                    </div>
+                    <div class="module-media">
+                        <div class="image">
+                            <img class="img-responsive" src="images/index_620x465-image02.jpg" alt="">
+                        </div>
+                        <a href="#"><span class="play-icon"></span></a>
+                    </div>
+                </div>
+
+                <!-- videos ends -->
+
+
+                <!-- top headlines -->
+
+                <div class="mt25 mb15">
+                    <!-- Begin .title-style02 -->
+                    <div class="title-left title-style04 underline04">
+                        <h3><a href="#">Top Headlines</a></h3>
+                    </div>
+                    <!-- End .title-style02 -->
+                    <div class="sidebar-post">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image07.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h3>01</h3>
+
+                                        <p class="ellipsis"><a href="#">Survivor is world's oldest man -
+                                            Guinness
+                                            World Records.</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image08.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h3>02</h3>
+
+                                        <p class="ellipsis"><a href="#">East Kilbride: Manager Billy O. to leave
+                                            post on 20 Dec.</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image09.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h3>03</h3>
+
+                                        <p class="ellipsis"><a href="#">Nature's way of saying older women
+                                            aren't
+                                            attractive?</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h3>04</h3>
+
+                                        <p class="ellipsis"><a href="#">Last post for stamp collectors, valued
+                                            in
+                                            catalogues</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-image">
+                                        <a class="img-link" href="#">
+                                            <img class="img-responsive img-full"
+                                                 src="images/index_370x185-image11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item-content">
+                                        <h3>05</h3>
+
+                                        <p class="ellipsis"><a href="#">The great age of the Post Office is
+                                            past,
+                                            here and indeed all over the ...</a></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--========== END .SIDEBAR-POST ==========-->
+
+                </div>
+
+                <!-- top headlines ends -->
+
+
+            </div>
+            <!-- RIGHT ENDS -->
+
+        </div>
+
+
+    </div>
+</section>
+<!-- module ends -->
