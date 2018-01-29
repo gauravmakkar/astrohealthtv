@@ -22,11 +22,13 @@
                        <div class="col-sm-12"><div class="col-sm-7 listDetailVideo">
                            <div class="video-full">
                                <div class="video-container">
-                                   <video id="lp-pom-video-13" class="js-player vidAdjust"
+                                   <video ng-init="enableUploadVideo()" ng-if="story.source!=='Youtube'" id="lp-pom-video-13" class="js-player vidAdjust"
                                           style="display:block;width: 100%">
                                        <source ng-src="{{story.link}}"
                                                type="video/mp4"/>
                                    </video>
+
+                                   <div class="youtube-video" style="display:block;width: 100%" ng-if="story.source==='Youtube'"  data-type="youtube" ng-init="enableYoutube()" data-video-id="{{story.link|youtubeLink}}"></div>
                                </div>
                            </div>
                        </div>
