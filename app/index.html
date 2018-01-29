@@ -31,8 +31,10 @@
     <![endif]-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script type="text/javascript">
-        let article_title=window.location.href.split("/")[window.location.href.split("/").length-1]
-        document.title=article_title.split("-").join(" ").replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+        if(window.location.href.indexOf("/article")>-1){
+            let article_title=window.location.href.split("/")[window.location.href.split("/").length-1]
+            document.title=article_title.split("-").join(" ").replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+        }
     </script>
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/2.0.18/plyr.css">

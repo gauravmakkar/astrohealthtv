@@ -125,7 +125,7 @@ angular.module('myApp', [
         return story_link.split("=")[1]
     }
 }).factory('Page', function() {
-    var title = 'Astro Health TV';
+    var title = (document.title||'Astro Health TV');
     return {
         title: function() { return title; },
         setTitle: function(newTitle) {
