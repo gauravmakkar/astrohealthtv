@@ -40,10 +40,14 @@ angular.module('myApp', [
 
     plyr.setup(document.querySelector('.js-player'), {autoplay: true});
     $(window).scrollTop($('.breaking-ribbon').offset().top - 100, 0)
-}]).controller("DetailsController", ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+}]).controller('AppController',['$scope','Page',function($scope,Page){
+    $scope.Page=Page
+
+}]).controller("DetailsController", ['$scope', '$http', '$location', '$routeParams',"Page", function ($scope, $http, $location, $routeParams,Page) {
 
     $scope.fetchStory = function () {
         $http.get('https://astrohealthmanager.herokuapp.com/api/accounts/video/' + $routeParams.id).then(function (results) {
+            Page.setTitle(results.data.title)
             $scope.story = results.data
         })
     }
@@ -120,4 +124,11 @@ angular.module('myApp', [
     return function (story_link) {
         return story_link.split("=")[1]
     }
-})
+}).factory('Page', function() {
+    var title = 'Astro Health TV';
+    return {
+        title: function() { return title; },
+        setTitle: function(newTitle) {
+            title = newTitle }
+    };
+});
