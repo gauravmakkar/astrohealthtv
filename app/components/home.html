@@ -52,10 +52,12 @@
             <div class="col-sm-9 col-md-9">
                 <div class="video-container">
                     <!--<div class="video">-->
-                    <video id="lp-pom-video-13" class="js-player vidAdjust" style="display:block;width: 100%">
-                        <source src="http://dls.vipgana.in/siteuploads/files/sfd3/1147/Kuch%20Iss%20Tarah%20(1921)_Full_HD_1080p-(MixMp4.Com).mp4"
-                                type="video/mp4">
+                    <video ng-if="videos" class="youtube-playlist vidAdjust" ng-init="enableYoutubePlayList()"
+                           style="display:block;width: 100%">
+
                     </video>
+
+                    <!--<div class="youtube-playlist" style="display:block;width: 100%"  ></div>-->
                     <!--</div>-->
                 </div>
 

@@ -34,6 +34,14 @@ angular.module('myApp', [
         plyr.setup(document.querySelector('.video_' + video._id))
     }
 
+    $scope.enableYoutubePlayList=function(){
+        plyr.setup('.youtube-playlist',{autoplay:true})[0].source({
+            type:       'video',
+            title:      'Example title',
+            sources:$scope.videos.map(function(video){return {src:video.link,type:(video.source.toLowerCase()==='youtube'?'youtube':'video')}})
+        });
+    }
+
     $scope.redirectToDetails = function (video) {
         $location.path("/article/" + [video._id,video.header].join("/"));
     }
