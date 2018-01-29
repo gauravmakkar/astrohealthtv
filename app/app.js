@@ -19,7 +19,7 @@ angular.module('myApp', [
         templateUrl: 'components/list.html',
         controller: 'ListController'
     });
-    $routeProvider.when('/detail/:id', {
+    $routeProvider.when('/article/:id', {
         templateUrl: 'components/detail.html',
         controller: 'DetailsController'
     });
@@ -35,7 +35,7 @@ angular.module('myApp', [
     }
 
     $scope.redirectToDetails = function (video) {
-        $location.path("/detail/" + video._id);
+        $location.path("/article/" + video._id);
     }
 
     plyr.setup(document.querySelector('.js-player'), {autoplay: true});
@@ -98,7 +98,7 @@ angular.module('myApp', [
     }
 
     $scope.redirectToDetails = function (video) {
-        $location.path("/detail/" + video._id);
+        $location.path("/article/" + video._id);
     }
 
     $scope.enableYoutube = function () {
