@@ -21,13 +21,13 @@
                     <div class="detailVideo" style="width: 100%" ng-if="story">
                         <div class="video-full">
                             <div class="video-container">
-                                <video ng-init="enableUploadVideo()"  ng-if="story.source!=='Youtube'" id="lp-pom-video-13" class="js-player vidAdjust"
+                                <video ng-init="enableUploadVideo(story)"  ng-if="story.source!=='Youtube'" id="lp-pom-video-13" class="js-player-{{story._id}} vidAdjust"
                                        style="display:block;width: 100%">
                                     <source ng-src="{{story.link}}"
                                             type="video/mp4"/>
                                 </video>
 
-                                <div class="youtube-video" style="display:block;width: 100%" ng-if="story.source==='Youtube'"  data-type="youtube" ng-init="enableYoutube()" data-video-id="{{story.link|youtubeLink}}"></div>
+                                <div class="youtube-video-{{story._id}}" style="display:block;width: 100%" ng-if="story.source==='Youtube'"  data-type="youtube" ng-init="enableYoutube(story)" data-video-id="{{story.link|youtubeLink}}"></div>
                             </div>
                         </div>
                     </div>

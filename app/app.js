@@ -40,14 +40,14 @@ angular.module('myApp', [
             title:      'Example title',
             sources:$scope.videos.map(function(video){return {src:video.link,type:(video.source.toLowerCase()==='youtube'?'youtube':'video')}})
         });
+        $(window).scrollTop($('.breaking-ribbon').offset().top - 50, 0)
     }
 
     $scope.redirectToDetails = function (video) {
         $location.path("/article/" + [video._id,video.header].join("/"));
     }
 
-    plyr.setup(document.querySelector('.js-player'), {autoplay: true});
-    $(window).scrollTop($('.breaking-ribbon').offset().top - 100, 0)
+
 }]).controller('AppController',['$scope','Page',function($scope,Page){
     $scope.Page=Page
 
@@ -60,16 +60,16 @@ angular.module('myApp', [
         })
     }
 
-    $scope.enableYoutube = function () {
+    $scope.enableYoutube = function (story) {
         setTimeout(function () {
-            plyr.setup(document.querySelector('.youtube-video'), {autoplay: true});
+            plyr.setup(document.querySelector('.youtube-video-'+story._id), {autoplay: true});
         }, 100)
 
     }
 
-    $scope.enableUploadVideo = function () {
+    $scope.enableUploadVideo = function (story) {
         setTimeout(function () {
-            plyr.setup(document.querySelector('.js-player'), {autoplay: true});
+            plyr.setup(document.querySelector('.js-player-'+story._id), {autoplay: true});
         }, 100)
 
     }
@@ -109,16 +109,16 @@ angular.module('myApp', [
         $location.path("/article/" + [video._id,video.header].join("/"));
     }
 
-    $scope.enableYoutube = function () {
+    $scope.enableYoutube = function (story) {
         setTimeout(function () {
-            plyr.setup(document.querySelector('.youtube-video'), {autoplay: false});
+            plyr.setup(document.querySelector('.youtube-video-'+story._id), {autoplay: false});
         }, 100)
 
     }
 
-    $scope.enableUploadVideo = function () {
+    $scope.enableUploadVideo = function (story) {
         setTimeout(function () {
-            plyr.setup(document.querySelector('.js-player'), {autoplay: false});
+            plyr.setup(document.querySelector('.js-player-'+story._id), {autoplay: false});
         }, 100)
 
     }
