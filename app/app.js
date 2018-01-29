@@ -48,8 +48,15 @@ angular.module('myApp', [
     }
 
 
-}]).controller('AppController',['$scope','Page',function($scope,Page){
+}]).controller('AppController',['$scope','Page','$interval',function($scope,Page,$interval){
     $scope.Page=Page
+
+    $scope.getDate=function(){
+        $scope.date=moment(new Date()).format("DD MMM YYYY")
+        $scope.time=moment(new Date()).format("hh:mm A")
+
+    }
+    setInterval($scope.getDate, 1000*60);
 
 }]).controller("DetailsController", ['$scope', '$http', '$location', '$routeParams',"Page", function ($scope, $http, $location, $routeParams,Page) {
 
@@ -126,7 +133,7 @@ angular.module('myApp', [
 
 }]).filter('viewDate', function () {
     return function (dateString) {
-        return moment(dateString).format("DD MMM YYYY hh:mm")
+        return moment(dateString).format("DD MMM YYYY hh:mm A")
     }
 }).filter('youtubeLink', function () {
     return function (story_link) {
