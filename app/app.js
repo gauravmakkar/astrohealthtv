@@ -81,6 +81,16 @@ angular.module('myApp', [
 
     }
 
+    $scope.fetchVideos = function () {
+        $http.get('https://astrohealthmanager.herokuapp.com/api/accounts/videos').then(function (results) {
+            $scope.videos = results.data
+        })
+    }
+
+    $scope.redirectToDetails = function (video) {
+        $location.path("/article/" + [video._id,video.header].join("/"));
+    }
+
 
 }]).controller("ListController", ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
 

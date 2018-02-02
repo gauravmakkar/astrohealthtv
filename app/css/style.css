@@ -323,7 +323,7 @@ ul {
 	display: block;
 	height: 2px;
 	position: absolute;
-	width: 30px;
+	width: 100%;
 }
 .center-title {
 	text-align: center;
@@ -1401,7 +1401,7 @@ blockquote img {
     	2.0 - Header
     -----------------------------------------------------------------*/
 header {
-	height: 245px;
+	height: 205px;
 }
 /* 2.1 - Top-menu 
     ---------------------------------------------------------------------- */
